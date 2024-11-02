@@ -125,24 +125,26 @@ a {
     align-items: center;
     position: relative;
     column-gap: 156px;
-    z-index: -1;
 }
 
 .hero-media {
     position: relative;
+    background: transparent;
 }
 
 .hero__decor-left {
     position: absolute;
     left: -42%;
     bottom: 0;
-    z-index: -1;
+    z-index: 0;
 }
 
 .avatar {
     width: 514px;
     height: 705px;
     object-fit: cover;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-info {
@@ -281,7 +283,6 @@ a {
     background: #5D3BEE;
     padding: 86px 0;
     position: relative;
-    z-index: -1;
 }
 
 .project-heading,
@@ -355,8 +356,12 @@ a {
     text-align: center;
 }
 
+.project-action {
+    --tex-color: #111;
+    --bg-color: #fff;
+}
+
 .project-btn {
     margin-top: 80px;
-    background: #fff;
     display: inline-block;
 }
