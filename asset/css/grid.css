@@ -1,13 +1,13 @@
 .container,
 .container-fluid {
     --column-size: 12;
-    --space: 10px;
+    --space: 30px;
 
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: calc(var(--space) / 2);
-    padding-right: calc(var(--space) / 2);
+    /* padding-left: calc(var(--space) / 2);
+    padding-right: calc(var(--space) / 2); */
 }
 
 .row {
@@ -89,7 +89,7 @@
     flex: 0 0 auto;
 }
 
-.row[class*='row-cols-']>* {
+.row[class^='row-cols-']>* {
     width: calc(100% / var(--row-cols-number));
 }
 
@@ -117,12 +117,14 @@
     --row-cols-number: 6;
 }
 
-.row>[class*='col-'] {
+.row>[class^='col-'] {
     width: calc(100% / var(--column-size) * var(--column-number));
+    /* width: calc(100% / var(--column-size) * var(--column-number)- (15px * (var(--column-number)-1))); */
 }
 
 .col-1 {
     --column-number: 1;
+    --column-gap: calc ();
 }
 
 .col-2 {
@@ -175,7 +177,7 @@
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
     .container {
-        --space: 24px;
+        --space: 0;
         max-width: 540px;
     }
 
