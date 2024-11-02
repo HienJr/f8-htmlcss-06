@@ -47,10 +47,11 @@ a {
     font-size: 1.8rem;
     font-weight: 700;
     padding: 16px 37px;
+    transition: 0.5s;
 }
 
 .btn:hover {
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .center {
