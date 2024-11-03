@@ -36,8 +36,8 @@
     <link rel="stylesheet" href="./asset/css/styles.css" />
 </head>
 
-<body style="height: 10000px">
-    <header class=".fixed">
+<body>
+    <header class="fixed">
         <div class="header">
             <div class="info">
                 <div class="info__icon">
@@ -50,10 +50,10 @@
             </div>
             <div class="menu">
                 <ul class="menu__list">
-                    <li><a href="#!" class="list__item">Projects</a></li>
-                    <li><a href="#!" class="list__item">Journey</a></li>
-                    <li><a href="#!" class="list__item">Service</a></li>
-                    <li><a href="#!" class="list__item">Contact</a></li>
+                    <li><a href="#project" class="list__item">Projects</a></li>
+                    <li><a href="#journey" class="list__item">Journey</a></li>
+                    <li><a href="#service" class="list__item">Service</a></li>
+                    <li><a href="#contact" class="list__item">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -99,7 +99,7 @@
                     </div>
                 </div>
         </section>
-        <section class="specialities">
+        <section class="specialities" id="service">
             <div class="container">
                 <div class="specialities-body center">
                     <h2 class="section-heading">Specialities</h2>
@@ -144,7 +144,7 @@
                 </div>
             </div>
         </section>
-        <section class="project">
+        <section class="project" id="project">
             <div class="container">
                 <div class="row">
                     <div class="col-5">
@@ -211,7 +211,215 @@
                 </div>
             </div>
         </section>
+        <section class="interactive" id="journey">
+            <div class="container">
+                <div class="sub-interactive">
+                    <p class="sub-title">Hey,,,,It’s Arif</p>
+                    <img src="./asset/icon/interactive-sub-icon.svg" alt="">
+                </div>
+                <h2 class="section-heading interactive-heading">Interactive Designer</h2>
+                <p class="desc interactive-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non
+                    nisl tincidunt ut elementum turpis.</p>
+                <div class="statistical">
+                    <div class="statistical__list">
+                        <div class="statistical__item">
+                            <p class="number">08+</p>
+                            <div class="desc sub-number">Years Experience</div>
+                        </div>
+                        <div class="statistical__item">
+                            <p class="number">21+</p>
+                            <div class="desc sub-number">Features & Awards</div>
+                        </div>
+                        <div class="statistical__item">
+                            <p class="number">97%</p>
+                            <div class="desc sub-number">Clients Rating</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feedback">
+            <img src="./asset/icon/feedback-decor.svg" alt="" class="feedback-decor__right">
+            <img src="./asset/icon/feedback-decor-left.svg" alt="" class="feedback-decor__left">
+            <div class="container">
+                <img src="./asset/img/interactive-img.png" alt="" class="feedback-img">
+                <h2 class="section-heading">What people says</h2>
+                <p class="desc feedback__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non
+                    nisl tincidunt ut elementum turpis.</p>
+                <p class="client-feedback">“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa.”</p>
+                <div class="client-info">
+                    <img src="./asset/icon/feedback-client-avatar.svg" alt="" class="client-avatar">
+                    <div class="client-name">Joe Elia</div>
+                </div>
+                <p class="client-address">User Interface Design at PCL Lab</p>
+                <img src="./asset/icon/Sliter.svg" alt="" class="slit">
+            </div>
+        </section>
+        <section class="questions">
+            <div class="container">
+                <h2 class="section-heading">A few questions
+                    clients normally ask me</h2>
+                <div class="question-list">
+                    <input type="checkbox" name="" id="reply-ask-1">
+                    <div class="question-item">
+                        <h3 class="ask">What is your hourly rate?</h3>
+                        <p class="reply">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl
+                            tincidunt ut elementum turpis.</p>
+                        <label for="reply-ask-1" class="reply-icon">
+                            <!-- <img src="./asset/icon/reply-icon-plus.svg" alt="" class="reply__icon--plus"> -->
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" class="reply__icon--plus"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.084 7.04199H0" stroke="#161A1C" stroke-width="2" />
+                                <path d="M7.04199 14.084V0" stroke="#161A1C" stroke-width="2" />
+                            </svg>
+                            <!-- <img src="./asset/icon/reply-icon-minus.svg" alt="" class="reply__icon--minus"> -->
+                            <svg width="15" height="3" viewBox="0 0 15 3" fill="none" class="reply__icon--minus"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.084 1.04199H0" stroke="#5D3BEE" stroke-width="2" />
+                            </svg>
+
+                        </label>
+                    </div>
+                    <input type="checkbox" name="" id="reply-ask-2">
+                    <div class="question-item">
+                        <h3 class="ask">What type of projects do you take on?</h3>
+                        <p class="reply">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, sit ipsam atque ex
+                            quam corrupti distinctio!</p>
+                        <label for="reply-ask-2" class="reply-icon">
+                            <!-- <img src="./asset/icon/reply-icon-plus.svg" alt="" class="reply__icon--plus"> -->
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" class="reply__icon--plus"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.084 7.04199H0" stroke="#161A1C" stroke-width="2" />
+                                <path d="M7.04199 14.084V0" stroke="#161A1C" stroke-width="2" />
+                            </svg>
+                            <!-- <img src="./asset/icon/reply-icon-minus.svg" alt="" class="reply__icon--minus"> -->
+                            <svg width="15" height="3" viewBox="0 0 15 3" fill="none" class="reply__icon--minus"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.084 1.04199H0" stroke="#5D3BEE" stroke-width="2" />
+                            </svg>
+
+                        </label>
+                    </div>
+                    <input type="checkbox" name="" id="reply-ask-3">
+                    <div class="question-item">
+                        <h3 class="ask">How do you charge for projects ?</h3>
+                        <p class="reply">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi vel, maxime
+                            provident voluptatum aperiam atque.</p>
+                        <label for="reply-ask-3" class="reply-icon">
+                            <!-- <img src="./asset/icon/reply-icon-plus.svg" alt="" class="reply__icon--plus"> -->
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" class="reply__icon--plus"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.084 7.04199H0" stroke="#161A1C" stroke-width="2" />
+                                <path d="M7.04199 14.084V0" stroke="#161A1C" stroke-width="2" />
+                            </svg>
+                            <!-- <img src="./asset/icon/reply-icon-minus.svg" alt="" class="reply__icon--minus"> -->
+                            <svg width="15" height="3" viewBox="0 0 15 3" fill="none" class="reply__icon--minus"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.084 1.04199H0" stroke="#5D3BEE" stroke-width="2" />
+                            </svg>
+
+                        </label>
+                    </div>
+                    <input type="checkbox" name="" id="reply-ask-4">
+                    <div class="question-item">
+                        <h3 class="ask">What time-zone do you work in?</h3>
+                        <p class="reply">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident possimus
+                            doloribus laborum! Eius, quis soluta, repellat libero!</p>
+                        <label for="reply-ask-4" class="reply-icon">
+                            <!-- <img src="./asset/icon/reply-icon-plus.svg" alt="" class="reply__icon--plus"> -->
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" class="reply__icon--plus"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.084 7.04199H0" stroke="#161A1C" stroke-width="2" />
+                                <path d="M7.04199 14.084V0" stroke="#161A1C" stroke-width="2" />
+                            </svg>
+                            <!-- <img src="./asset/icon/reply-icon-minus.svg" alt="" class="reply__icon--minus"> -->
+                            <svg width="15" height="3" viewBox="0 0 15 3" fill="none" class="reply__icon--minus"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.084 1.04199H0" stroke="#5D3BEE" stroke-width="2" />
+                            </svg>
+
+                        </label>
+                    </div>
+                    <input type="checkbox" name="" id="reply-ask-5">
+                    <div class="question-item">
+                        <h3 class="ask">How often can we communicate?</h3>
+                        <p class="reply">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit quasi,
+                            distinctio dicta saepe commodi!</p>
+                        <label for="reply-ask-5" class="reply-icon">
+                            <!-- <img src="./asset/icon/reply-icon-plus.svg" alt="" class="reply__icon--plus"> -->
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" class="reply__icon--plus"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.084 7.04199H0" stroke="#161A1C" stroke-width="2" />
+                                <path d="M7.04199 14.084V0" stroke="#161A1C" stroke-width="2" />
+                            </svg>
+                            <!-- <img src="./asset/icon/reply-icon-minus.svg" alt="" class="reply__icon--minus"> -->
+                            <svg width="15" height="3" viewBox="0 0 15 3" fill="none" class="reply__icon--minus"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.084 1.04199H0" stroke="#5D3BEE" stroke-width="2" />
+                            </svg>
+
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="atmosphere">
+            <div class="container">
+                <h2 class="section-heading">My atmosphere</h2>
+                <p class="desc atmosphere__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non
+                    nisl tincidunt ut elementum turpis.</p>
+                <a class="atmosphere__info">@interaction_arif</a>
+                <div class="atmosphere__list">
+                    <div class="row">
+                        <div class="col-lg-4"><img src="./asset/img/atmosphere__list-1.png" alt=""
+                                class="atmosphere__img"></div>
+                        <div class="col-lg-4"><img src="./asset/img/atmosphere__list-2.png" alt=""
+                                class="atmosphere__img"></div>
+                        <div class="col-lg-4"><img src="./asset/img/atmosphere__list-3.png" alt=""
+                                class="atmosphere__img"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="booking" id="contact">
+            <div class="container">
+                <img src="./asset/img/booking-icon.svg" alt="" class="booking__icon">
+                <h2 class="section-heading booking__heading">Got a project? Let’s talk</h2>
+                <p class="desc booking__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl
+                    tincidunt ut elementum turpis.</p>
+                <a href="#!" class="btn booking__btn">Book a Call</a>
+                <img src="./asset/img/footer-decor.svg" alt="" class="booking__decor">
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="footer-body">
+            <div class="info">
+                <div class="info__icon">
+                    <img src="./asset/icon/email-icon.svg" alt="my profile" class="email-icon" />
+                </div>
+                <a href="#!" class="info__email">hi@arif.interactive</a>
+            </div>
+            <div class="logo">
+                <a href="#"><img src="./asset/icon/logo.svg" alt="my profile" class="img-logo" /></a>
+            </div>
+            <div class="menu">
+                <ul class="menu__list">
+                    <li><a href="#project" class="list__item">Projects</a></li>
+                    <li><a href="#journey" class="list__item">Journey</a></li>
+                    <li><a href="#service" class="list__item">Service</a></li>
+                    <li><a href="#contact" class="list__item">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-bottom__desc">©interactiveArif 2021. All rights reserved.</p>
+            <p class="footer-bottom__desc">Privacy Policy</p>
+            <p class="footer-bottom__desc">Terms of Conditions</p>
+        </div>
+    </footer>
 </body>
 
 </html>
