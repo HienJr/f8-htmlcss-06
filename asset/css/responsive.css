@@ -195,11 +195,13 @@
 
     .project__list {
         margin-top: 60px;
-        text-align: start;
+        text-align: center;
     }
 
     .project-item {
         column-gap: 22px;
+        padding: 20px 15px;
+        text-align: start;
     }
 
     .project-item__heading {
