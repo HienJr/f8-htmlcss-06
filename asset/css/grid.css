@@ -124,7 +124,6 @@
 
 .col-1 {
     --column-number: 1;
-    --column-gap: calc ();
 }
 
 .col-2 {

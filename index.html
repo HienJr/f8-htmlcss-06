@@ -8,22 +8,22 @@
     <!-- Reset css -->
     <link rel="stylesheet" href="./asset/css/reset.css" />
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="./asset/icon/favicon/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="./asset/icon/favicon/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="./asset/icon/favicon/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="./asset/icon/favicon/apple-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="./asset/icon/favicon/apple-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="./asset/icon/favicon/apple-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="./asset/icon/favicon/apple-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="./asset/icon/favicon/apple-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./asset/icon/favicon/apple-icon-180x180.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="./asset/icon/favicon/android-icon-192x192.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./asset/icon/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="./asset/icon/favicon/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./asset/icon/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="./asset/icon/favicon/manifest.json" />
+    <link rel="apple-touch-icon" sizes="57x57" href="./asset/img/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="./asset/img/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./asset/img/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./asset/img/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./asset/img/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="./asset/img/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="./asset/img/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="./asset/img/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./asset/img/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./asset/img/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./asset/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./asset/img/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./asset/img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./asset/img/favicon/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="./asset/icon/favicon/ms-icon-144x144.png" />
+    <meta name="msapplication-TileImage" content="./asset/img/favicon/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,28 +32,44 @@
         rel="stylesheet" />
     <!-- Css -->
     <link rel="stylesheet" href="./asset/css/grid.css" />
-    <link rel="stylesheet" href="./asset/css/responsive.css" />
     <link rel="stylesheet" href="./asset/css/styles.css" />
+    <link rel="stylesheet" href="./asset/css/responsive.css" />
 </head>
 
 <body>
     <header class="fixed">
         <div class="header">
-            <div class="info">
+            <div class="info show-on-pc">
                 <div class="info__icon">
-                    <img src="./asset/icon/email-icon.svg" alt="my profile" class="email-icon" />
+                    <img src="./asset/img/email-icon.svg" alt="my profile" class="email-icon" />
                 </div>
                 <a href="#!" class="info__email">hi@arif.interactive</a>
             </div>
             <div class="logo">
-                <a href="#"><img src="./asset/icon/logo.svg" alt="my profile" class="img-logo" /></a>
+                <a href="#"><img src="./asset/img/logo.svg" alt="my profile" class="img-logo" /></a>
             </div>
-            <div class="menu">
+            <div class="menu show-on-pc">
                 <ul class="menu__list">
                     <li><a href="#project" class="list__item">Projects</a></li>
                     <li><a href="#journey" class="list__item">Journey</a></li>
                     <li><a href="#service" class="list__item">Service</a></li>
                     <li><a href="#contact" class="list__item">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Mobile menu -->
+            <div class="menu-mobile show-on-mobile">
+                <img src="./asset/img/info-mobile-icon.svg" alt="">
+                <input type="checkbox" name="" id="menu-checkbox" class="menu-checkbox">
+                <label for="menu-checkbox">
+                    <img src="./asset/img/menu-mobile.svg" alt="" class="menu-icon">
+                </label>
+                <label for="menu-checkbox" class="menu-overlay"></label>
+                <ul class="menu-mobile__list">
+                    <li><a href="#project" class="mobile-list__item">Projects</a></li>
+                    <li><a href="#journey" class="mobile-list__item">Journey</a></li>
+                    <li><a href="#service" class="mobile-list__item">Service</a></li>
+                    <li><a href="#contact" class="mobile-list__item">Contact</a></li>
+                    <li><a href="#!" class="info__email">hi@arif.interactive</a></li>
                 </ul>
             </div>
         </div>
@@ -77,7 +93,7 @@
                 <p class="follow-desc">Follow me on:</p>
                 <img src="./asset/img/hero-social.svg" alt="my profile" />
             </div>
-            <img src="./asset/img/avatar-decor.svg" alt="my profile" class="hero__decor-right" />
+            <img src="./asset/img/avatar-decor.svg" alt="my profile" class="hero__decor-right show-on-pc" />
         </div>
     </section>
     <main>
@@ -86,18 +102,18 @@
                 <div class="client-body">
                     <h2 class="client-heading">Meet my recent clients</h2>
                     <div class="client-list">
-                        <a href="#!"><img src="./asset/icon/gogle.svg" alt="my profile" class="client-logo" /></a>
-                        <a href="#!"><img src="./asset/icon/warner bros.svg" alt="my profile" class="client-logo" /></a>
-                        <a href="#!"><img src="./asset/icon/Mailchamp.svg" alt="my profile" class="client-logo" /></a>
-                        <a href="#!"><img src="./asset/icon/Adobe.svg" alt="my profile" class="client-logo" /></a>
-                        <a href="#!"><img src="./asset/icon/Upwork.svg" alt="my profile" class="client-logo" /></a>
-                        <a href="#!"><img src="./asset/icon/Creative cloude.svg" alt="my profile"
+                        <a href="#!"><img src="./asset/img/gogle.svg" alt="my profile" class="client-logo" /></a>
+                        <a href="#!"><img src="./asset/img/warner bros.svg" alt="my profile" class="client-logo" /></a>
+                        <a href="#!"><img src="./asset/img/Mailchamp.svg" alt="my profile" class="client-logo" /></a>
+                        <a href="#!"><img src="./asset/img/Adobe.svg" alt="my profile" class="client-logo" /></a>
+                        <a href="#!"><img src="./asset/img/Upwork.svg" alt="my profile" class="client-logo" /></a>
+                        <a href="#!"><img src="./asset/img/Creative cloude.svg" alt="my profile"
                                 class="client-logo" /></a>
-                        <a href="#!"><img src="./asset/icon/Woocommercde.svg" alt="my profile"
-                                class="client-logo" /></a>
-                        <a href="#!"><img src="./asset/icon/Canva.svg" alt="my profile" class="client-logo" /></a>
+                        <a href="#!"><img src="./asset/img/Woocommercde.svg" alt="my profile" class="client-logo" /></a>
+                        <a href="#!"><img src="./asset/img/Canva.svg" alt="my profile" class="client-logo" /></a>
                     </div>
                 </div>
+            </div>
         </section>
         <section class="specialities" id="service">
             <div class="container">
@@ -110,9 +126,9 @@
                 </div>
                 <div class="specialities__list">
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-12">
                             <article class="specialities__item">
-                                <img src="./asset/icon/specialities-icon-1.svg" alt="" class="item__img">
+                                <img src="./asset/img/specialities-icon-1.svg" alt="" class="item__img">
                                 <h3 class="item__heading">Product design</h3>
                                 <p class="desc item__desc">Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl
                                     solor
@@ -120,9 +136,9 @@
                                     elementum turpis.</p>
                             </article>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-12 show-on-pc">
                             <article class="specialities__item">
-                                <img src="./asset/icon/specialities-icon-2.svg" alt="" class="item__img">
+                                <img src="./asset/img/specialities-icon-2.svg" alt="" class="item__img">
                                 <h3 class="item__heading">UI/UX Design</h3>
                                 <p class="desc item__desc">Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl
                                     solor
@@ -130,9 +146,9 @@
                                     elementum turpis.</p>
                             </article>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-12 show-on-pc">
                             <article class="specialities__item">
-                                <img src="./asset/icon/specialities-icon-3.svg" alt="" class="item__img">
+                                <img src="./asset/img/specialities-icon-3.svg" alt="" class="item__img">
                                 <h3 class="item__heading">Interactive design</h3>
                                 <p class="desc item__desc">Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl
                                     solor
@@ -141,23 +157,26 @@
                             </article>
                         </div>
                     </div>
+                    <div class="list-dote center">
+                        <img src="./asset/img/client-sliter.svg" alt="" class=" show-on-mobile">
+                    </div>
                 </div>
             </div>
         </section>
         <section class="project" id="project">
             <div class="container">
                 <div class="row">
-                    <div class="col-5">
-                        <h2 class="project-heading section-heading">Take a look at my recent projects</h2>
+                    <div class="col-12 col-lg-5">
+                        <h2 class="project-heading section-heading center">Take a look at my recent projects</h2>
                     </div>
-
-                    <p class="desc project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non
+                    <p class="desc project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                        urna, non
                         nisl
                         tincidunt ut
                         elementum turpis.</p>
                 </div>
                 <div class="row project__list">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-sm-12">
                         <article class="project-item">
                             <div class="item-left-wrap">
                                 <h3 class="project-item__heading">Wally Website</h3>
@@ -166,10 +185,10 @@
                                 <a href="#!" class="project-item__link">Case Study</a>
                             </div>
                             <img src="./asset/img/project-item-img-1.png" alt="" class="project-item__img">
-                            <img src="./asset/icon/project-item-decor.svg" alt="" class="project-decor">
+                            <img src="./asset/img/project-item-decor.svg" alt="" class="project-decor">
                         </article>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-sm-12">
                         <article class="project-item">
                             <div class="item-left-wrap">
                                 <h3 class="project-item__heading">Banking App</h3>
@@ -178,10 +197,10 @@
                                 <a href="#!" class="project-item__link">Case Study</a>
                             </div>
                             <img src="./asset/img/project-item-img-2.png" alt="" class="project-item__img">
-                            <img src="./asset/icon/project-item-decor.svg" alt="" class="project-decor">
+                            <img src="./asset/img/project-item-decor.svg" alt="" class="project-decor">
                         </article>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-sm-12">
                         <article class="project-item">
                             <div class="item-left-wrap">
                                 <h3 class="project-item__heading">Web App</h3>
@@ -190,10 +209,10 @@
                                 <a href="#!" class="project-item__link">Case Study</a>
                             </div>
                             <img src="./asset/img/project-item-img-3.png" alt="" class="project-item__img">
-                            <img src="./asset/icon/project-item-decor.svg" alt="" class="project-decor">
+                            <img src="./asset/img/project-item-decor.svg" alt="" class="project-decor">
                         </article>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-sm-12">
                         <article class="project-item">
                             <div class="item-left-wrap">
                                 <h3 class="project-item__heading">Oculus Website</h3>
@@ -202,7 +221,7 @@
                                 <a href="#!" class="project-item__link">Case Study</a>
                             </div>
                             <img src="./asset/img/project-item-img-4.png" alt="" class="project-item__img">
-                            <img src="./asset/icon/project-item-decor.svg" alt="" class="project-decor">
+                            <img src="./asset/img/project-item-decor.svg" alt="" class="project-decor">
                         </article>
                     </div>
                 </div>
@@ -215,7 +234,7 @@
             <div class="container">
                 <div class="sub-interactive">
                     <p class="sub-title">Hey,,,,It’s Arif</p>
-                    <img src="./asset/icon/interactive-sub-icon.svg" alt="">
+                    <img src="./asset/img/interactive-sub-icon.svg" alt="" class="sub-icon">
                 </div>
                 <h2 class="section-heading interactive-heading">Interactive Designer</h2>
                 <p class="desc interactive-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non
@@ -239,8 +258,8 @@
             </div>
         </section>
         <section class="feedback">
-            <img src="./asset/icon/feedback-decor.svg" alt="" class="feedback-decor__right">
-            <img src="./asset/icon/feedback-decor-left.svg" alt="" class="feedback-decor__left">
+            <img src="./asset/img/feedback-decor.svg" alt="" class="feedback-decor__right">
+            <img src="./asset/img/feedback-decor-left.svg" alt="" class="feedback-decor__left">
             <div class="container">
                 <img src="./asset/img/interactive-img.png" alt="" class="feedback-img">
                 <h2 class="section-heading">What people says</h2>
@@ -250,16 +269,16 @@
                     eu fugiat nulla pariatur. Excepteur sint
                     occaecat cupidatat non proident, sunt in culpa.”</p>
                 <div class="client-info">
-                    <img src="./asset/icon/feedback-client-avatar.svg" alt="" class="client-avatar">
+                    <img src="./asset/img/feedback-client-avatar.svg" alt="" class="client-avatar">
                     <div class="client-name">Joe Elia</div>
                 </div>
                 <p class="client-address">User Interface Design at PCL Lab</p>
-                <img src="./asset/icon/Sliter.svg" alt="" class="slit">
+                <img src="./asset/img/Sliter.svg" alt="" class="slit">
             </div>
         </section>
         <section class="questions">
             <div class="container">
-                <h2 class="section-heading">A few questions
+                <h2 class="section-heading questions-heading">A few questions
                     clients normally ask me</h2>
                 <div class="question-list">
                     <input type="checkbox" name="" id="reply-ask-1">
@@ -268,13 +287,13 @@
                         <p class="reply">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl
                             tincidunt ut elementum turpis.</p>
                         <label for="reply-ask-1" class="reply-icon">
-                            <!-- <img src="./asset/icon/reply-icon-plus.svg" alt="" class="reply__icon--plus"> -->
+                            <!-- <img src="./asset/img/reply-icon-plus.svg" alt="" class="reply__icon--plus"> -->
                             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" class="reply__icon--plus"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14.084 7.04199H0" stroke="#161A1C" stroke-width="2" />
                                 <path d="M7.04199 14.084V0" stroke="#161A1C" stroke-width="2" />
                             </svg>
-                            <!-- <img src="./asset/icon/reply-icon-minus.svg" alt="" class="reply__icon--minus"> -->
+                            <!-- <img src="./asset/img/reply-icon-minus.svg" alt="" class="reply__icon--minus"> -->
                             <svg width="15" height="3" viewBox="0 0 15 3" fill="none" class="reply__icon--minus"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14.084 1.04199H0" stroke="#5D3BEE" stroke-width="2" />
@@ -288,13 +307,13 @@
                         <p class="reply">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, sit ipsam atque ex
                             quam corrupti distinctio!</p>
                         <label for="reply-ask-2" class="reply-icon">
-                            <!-- <img src="./asset/icon/reply-icon-plus.svg" alt="" class="reply__icon--plus"> -->
+                            <!-- <img src="./asset/img/reply-icon-plus.svg" alt="" class="reply__icon--plus"> -->
                             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" class="reply__icon--plus"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14.084 7.04199H0" stroke="#161A1C" stroke-width="2" />
                                 <path d="M7.04199 14.084V0" stroke="#161A1C" stroke-width="2" />
                             </svg>
-                            <!-- <img src="./asset/icon/reply-icon-minus.svg" alt="" class="reply__icon--minus"> -->
+                            <!-- <img src="./asset/img/reply-icon-minus.svg" alt="" class="reply__icon--minus"> -->
                             <svg width="15" height="3" viewBox="0 0 15 3" fill="none" class="reply__icon--minus"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14.084 1.04199H0" stroke="#5D3BEE" stroke-width="2" />
@@ -308,13 +327,13 @@
                         <p class="reply">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi vel, maxime
                             provident voluptatum aperiam atque.</p>
                         <label for="reply-ask-3" class="reply-icon">
-                            <!-- <img src="./asset/icon/reply-icon-plus.svg" alt="" class="reply__icon--plus"> -->
+                            <!-- <img src="./asset/img/reply-icon-plus.svg" alt="" class="reply__icon--plus"> -->
                             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" class="reply__icon--plus"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14.084 7.04199H0" stroke="#161A1C" stroke-width="2" />
                                 <path d="M7.04199 14.084V0" stroke="#161A1C" stroke-width="2" />
                             </svg>
-                            <!-- <img src="./asset/icon/reply-icon-minus.svg" alt="" class="reply__icon--minus"> -->
+                            <!-- <img src="./asset/img/reply-icon-minus.svg" alt="" class="reply__icon--minus"> -->
                             <svg width="15" height="3" viewBox="0 0 15 3" fill="none" class="reply__icon--minus"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14.084 1.04199H0" stroke="#5D3BEE" stroke-width="2" />
@@ -328,13 +347,13 @@
                         <p class="reply">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident possimus
                             doloribus laborum! Eius, quis soluta, repellat libero!</p>
                         <label for="reply-ask-4" class="reply-icon">
-                            <!-- <img src="./asset/icon/reply-icon-plus.svg" alt="" class="reply__icon--plus"> -->
+                            <!-- <img src="./asset/img/reply-icon-plus.svg" alt="" class="reply__icon--plus"> -->
                             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" class="reply__icon--plus"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14.084 7.04199H0" stroke="#161A1C" stroke-width="2" />
                                 <path d="M7.04199 14.084V0" stroke="#161A1C" stroke-width="2" />
                             </svg>
-                            <!-- <img src="./asset/icon/reply-icon-minus.svg" alt="" class="reply__icon--minus"> -->
+                            <!-- <img src="./asset/img/reply-icon-minus.svg" alt="" class="reply__icon--minus"> -->
                             <svg width="15" height="3" viewBox="0 0 15 3" fill="none" class="reply__icon--minus"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14.084 1.04199H0" stroke="#5D3BEE" stroke-width="2" />
@@ -348,13 +367,13 @@
                         <p class="reply">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit quasi,
                             distinctio dicta saepe commodi!</p>
                         <label for="reply-ask-5" class="reply-icon">
-                            <!-- <img src="./asset/icon/reply-icon-plus.svg" alt="" class="reply__icon--plus"> -->
+                            <!-- <img src="./asset/img/reply-icon-plus.svg" alt="" class="reply__icon--plus"> -->
                             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" class="reply__icon--plus"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14.084 7.04199H0" stroke="#161A1C" stroke-width="2" />
                                 <path d="M7.04199 14.084V0" stroke="#161A1C" stroke-width="2" />
                             </svg>
-                            <!-- <img src="./asset/icon/reply-icon-minus.svg" alt="" class="reply__icon--minus"> -->
+                            <!-- <img src="./asset/img/reply-icon-minus.svg" alt="" class="reply__icon--minus"> -->
                             <svg width="15" height="3" viewBox="0 0 15 3" fill="none" class="reply__icon--minus"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14.084 1.04199H0" stroke="#5D3BEE" stroke-width="2" />
@@ -373,24 +392,34 @@
                 <a class="atmosphere__info">@interaction_arif</a>
                 <div class="atmosphere__list">
                     <div class="row">
-                        <div class="col-lg-4"><img src="./asset/img/atmosphere__list-1.png" alt=""
+                        <div class="col-lg-4 col-12"><img src="./asset/img/atmosphere__list-1.png" alt=""
                                 class="atmosphere__img"></div>
-                        <div class="col-lg-4"><img src="./asset/img/atmosphere__list-2.png" alt=""
+                        <div class="col-lg-4 col-12 show-on-pc"><img src="./asset/img/atmosphere__list-2.png" alt=""
                                 class="atmosphere__img"></div>
-                        <div class="col-lg-4"><img src="./asset/img/atmosphere__list-3.png" alt=""
+                        <div class="col-lg-4 col-12 show-on-pc"><img src="./asset/img/atmosphere__list-3.png" alt=""
                                 class="atmosphere__img"></div>
                     </div>
+                    <img src="./asset/img/Sliter-atmosphere__list (1).svg" alt=""
+                        class="slit-atmosphere show-on-mobile">
                 </div>
             </div>
         </section>
         <section class="booking" id="contact">
             <div class="container">
-                <img src="./asset/img/booking-icon.svg" alt="" class="booking__icon">
-                <h2 class="section-heading booking__heading">Got a project? Let’s talk</h2>
-                <p class="desc booking__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl
-                    tincidunt ut elementum turpis.</p>
-                <a href="#!" class="btn booking__btn">Book a Call</a>
-                <img src="./asset/img/footer-decor.svg" alt="" class="booking__decor">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="booking-body">
+                            <img src="./asset/img/booking-icon.svg" alt="" class="booking__icon">
+                            <h2 class="section-heading booking__heading">Got a project? Let’s talk</h2>
+                            <p class="desc booking__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                                urna,
+                                non nisl
+                                tincidunt ut elementum turpis.</p>
+                            <a href="#!" class="btn booking__btn">Book a Call</a>
+                            <img src="./asset/img/footer-decor.svg" alt="" class="booking__decor">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -398,12 +427,12 @@
         <div class="footer-body">
             <div class="info">
                 <div class="info__icon">
-                    <img src="./asset/icon/email-icon.svg" alt="my profile" class="email-icon" />
+                    <img src="./asset/img/email-icon.svg" alt="my profile" class="email-icon" />
                 </div>
                 <a href="#!" class="info__email">hi@arif.interactive</a>
             </div>
             <div class="logo">
-                <a href="#"><img src="./asset/icon/logo.svg" alt="my profile" class="img-logo" /></a>
+                <a href="#"><img src="./asset/img/logo.svg" alt="my profile" class="img-logo" /></a>
             </div>
             <div class="menu">
                 <ul class="menu__list">
@@ -415,9 +444,11 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p class="footer-bottom__desc">©interactiveArif 2021. All rights reserved.</p>
-            <p class="footer-bottom__desc">Privacy Policy</p>
-            <p class="footer-bottom__desc">Terms of Conditions</p>
+            <p class="footer-bottom__desc left-wrap">©interactiveArif 2021. All rights reserved.</p>
+            <div class="right-wrap">
+                <p class="footer-bottom__desc">Privacy Policy</p>
+                <p class="footer-bottom__desc">Terms of Conditions</p>
+            </div>
         </div>
     </footer>
 </body>
