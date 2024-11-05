@@ -13,8 +13,10 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(-1 * var(--space) / 2);
-    margin-right: calc(-1 * var(--space) / 2);
+    column-gap: var(--space);
+    margin-left: calc(-1 * var(--spacing));
+    /* margin-left: calc(-1 * var(--space) / 2);
+    margin-right: calc(-1 * var(--space) / 2); */
 }
 
 .col {
@@ -80,8 +82,9 @@
 .col,
 .row[class*='row-cols-']>*,
 .row>[class*='col-'] {
-    padding-left: calc(var(--space) / 2);
-    padding-right: calc(var(--space) / 2);
+    /* padding-left: calc(var(--space) / 2);
+    padding-right: calc(var(--space) / 2); */
+    margin-left: var(--spacing);
 }
 
 .row[class*='row-cols-']>*,
@@ -118,7 +121,7 @@
 }
 
 .row>[class^='col-'] {
-    width: calc(100% / var(--column-size) * var(--column-number));
+    width: calc(100% / var(--column-size) * var(--column-number) - var(--space));
 }
 
 .col-1 {
